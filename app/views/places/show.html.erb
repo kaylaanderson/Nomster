@@ -42,13 +42,14 @@
 <br /><br />
 
 <% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture.url %>
+  <img src="<%= photo.picture %>">
   <%= photo.caption %>
 <% end %>
   <div class="clear"></div>
   <div class="float-right">
     <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
     <%= f.input :picture %>
+    <%= f.input :caption %>
     <%= f.submit "Add a photo", class: 'btn btn-primary' %>
     <% end %>
   </div>

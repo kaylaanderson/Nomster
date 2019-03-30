@@ -34,8 +34,7 @@
 
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
-     <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photoModal">
       Add a Photo
       </button>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -48,7 +47,7 @@
   <div class="clear"></div>
 
       <!-- Photo Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">

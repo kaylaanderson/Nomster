@@ -71,11 +71,14 @@
     </div>
      
     
-
+    <div class="gallery">
       <% @place.photos.each do |photo| %>
-        <img src="<%= photo.picture %>">
-        <%= photo.caption %>
+        <div class="col-12 col-sm-6">
+          <img src="<%= photo.picture %>">
+          <%= photo.caption %>
+        </div>
       <% end %>
+    </div>
   </div>
 
 

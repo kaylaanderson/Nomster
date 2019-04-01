@@ -88,3 +88,13 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
+
+.pagination {
+  display: inline-block;
+  .previous_page { background:#7777ff; color:white }
+  .previous_page.disabled { background: white; color: #777 }
+  .current { background: yellow }
+  .next_page { background: #7777ff; color: white }
+  .next_page.disabled { background: white; color: #777 }
+}

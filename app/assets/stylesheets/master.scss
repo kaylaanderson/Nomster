@@ -91,10 +91,16 @@ div.desc {
 
 
 .pagination {
-  display: inline-block;
-  .previous_page { background:#7777ff; color:white }
+  .previous_page { background:none; color: black }
   .previous_page.disabled { background: white; color: #777 }
-  .current { background: yellow }
-  .next_page { background: #7777ff; color: white }
+  .current { background: none }
+  .next_page { background: none; color: black }
   .next_page.disabled { background: white; color: #777 }
+}
+
+
+.pagination {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 20px;
 }
